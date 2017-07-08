@@ -7,5 +7,6 @@ int main()
 	printf("changes in master\n");
 	printf("merge conflict in dev\n");
 	printf("after remote\n");
+	printf("http://blog.csdn.net/jiandanjinxin/article/details/74370177\n");
 	return 0;
 }
