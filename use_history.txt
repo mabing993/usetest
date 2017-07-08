@@ -1,0 +1,189 @@
+1060  2017-07-08 22:15:41 mkdir git-repository
+1061  2017-07-08 22:15:42 ls
+1062  2017-07-08 22:16:00 mv git-repository/ git_repository/
+1063  2017-07-08 22:16:01 ls
+1064  2017-07-08 22:16:06 cd git_repository/
+1069  2017-07-08 22:17:20 ls
+1071  2017-07-08 22:17:41 git --version
+1077  2017-07-08 22:21:47 git init
+1078  2017-07-08 22:21:54 ls
+1079  2017-07-08 22:21:57 ls -la
+1094  2017-07-08 22:23:32 git status
+1095  2017-07-08 22:23:43 vim test.c
+1096  2017-07-08 22:24:29 git status
+1097  2017-07-08 22:24:51 git add test.c
+1098  2017-07-08 22:24:53 git status
+1099  2017-07-08 22:26:05 git commit -m "add test.c"
+1100  2017-07-08 22:26:37 git status 
+1101  2017-07-08 22:27:01 ls
+1109  2017-07-08 22:28:14 vim test.c 
+1110  2017-07-08 22:28:37 git status 
+1111  2017-07-08 22:29:34 git commit -a -m "update test.c"
+1112  2017-07-08 22:29:39 git status 
+1113  2017-07-08 22:29:50 git log
+1114  2017-07-08 22:30:12 git diff
+1115  2017-07-08 22:31:13 vim test.c 
+1116  2017-07-08 22:31:47 git diff
+1117  2017-07-08 22:32:59 git commit -a -m "update test.c second time"
+1118  2017-07-08 22:33:03 git log
+1119  2017-07-08 22:35:32 git log --oneline
+1120  2017-07-08 22:36:20 git status -s
+1121  2017-07-08 22:36:31 git -s
+1122  2017-07-08 22:36:38 vim test.c 
+1123  2017-07-08 22:36:44 git status -s
+1124  2017-07-08 22:37:17 git reset test.c
+1125  2017-07-08 22:37:22 vim test.c 
+1126  2017-07-08 22:37:31 git status -s
+1127  2017-07-08 22:39:50 git reset --hard HEAD
+1128  2017-07-08 22:39:57 vim test.c 
+1129  2017-07-08 22:40:13 git log --oneline
+1130  2017-07-08 22:40:28 git log
+1131  2017-07-08 22:40:38 vim test.c 
+1132  2017-07-08 22:41:03 git commit test.c -m "third time"
+1133  2017-07-08 22:41:07 git log
+1134  2017-07-08 22:41:34 git log --oneline 
+1135  2017-07-08 22:42:15 git reset --hard HEAD
+1136  2017-07-08 22:42:30 git log --oneline 
+1137  2017-07-08 22:42:47 git reset --hard 3216278
+1138  2017-07-08 22:42:56 git log --oneline 
+1139  2017-07-08 22:43:00 vim test.c 
+1140  2017-07-08 22:43:24 git log --oneline 
+1141  2017-07-08 22:43:37 git reflog
+1142  2017-07-08 22:44:14 git log --oneline 
+1143  2017-07-08 22:44:25 git reset --hard 32118a5
+1144  2017-07-08 22:44:29 git log --oneline 
+1145  2017-07-08 22:44:33 vim test.c 
+1146  2017-07-08 22:44:41 ls -la
+1147  2017-07-08 22:46:08 git log --oneline 
+1148  2017-07-08 22:46:38 git checkout 98eb16d -- test.c
+1149  2017-07-08 22:46:41 vim test.c 
+1150  2017-07-08 22:46:49 ls -l test.c 
+1151  2017-07-08 22:47:01 git log --oneline 
+1152  2017-07-08 22:47:17 git status 
+1153  2017-07-08 22:47:34 git commit test.c
+1154  2017-07-08 22:48:10 git commit test.c -m "reset test.c to the init"
+1155  2017-07-08 22:48:18 git status
+1156  2017-07-08 22:48:30 git log --oneline 
+1157  2017-07-08 22:48:36 vim test.c 
+1158  2017-07-08 22:49:41 rm test.c 
+1159  2017-07-08 22:49:42 ls
+1160  2017-07-08 22:49:46 git status 
+1161  2017-07-08 22:50:13 git commit -m "delete test.c"
+1162  2017-07-08 22:50:19 git status 
+1163  2017-07-08 22:50:27 git log --oneline 
+1164  2017-07-08 22:50:38 git rm test.c
+1165  2017-07-08 22:50:42 git commit -m "delete test.c"
+1166  2017-07-08 22:50:47 git status 
+1167  2017-07-08 22:50:54 git log --oneline 
+1168  2017-07-08 22:50:57 ls
+1169  2017-07-08 22:51:21 git checkout -- test.c
+1170  2017-07-08 22:51:56 git reset --hard 32118a5
+1171  2017-07-08 22:51:59 ls
+1172  2017-07-08 22:52:08 git log --oneline 
+1173  2017-07-08 22:52:19 git reflog --oneline 
+1174  2017-07-08 22:54:27 git log --oneline --graph
+1181  2017-07-08 22:55:26 git branch dev
+1182  2017-07-08 22:55:30 git branch 
+1192  2017-07-08 22:56:15 git checkout dev
+1193  2017-07-08 22:56:19 git branch 
+1194  2017-07-08 22:56:24 git status
+1195  2017-07-08 22:56:40 git log
+1196  2017-07-08 22:56:47 git log --oneline 
+1197  2017-07-08 22:56:50 git branch 
+1198  2017-07-08 22:56:53 git status
+1199  2017-07-08 22:57:02 git checkout master
+1200  2017-07-08 22:57:06 git branch 
+1201  2017-07-08 22:57:08 git status
+1202  2017-07-08 22:58:18 git checkout dev2
+1203  2017-07-08 22:58:28 git checkout -b dev2
+1204  2017-07-08 22:58:33 git branch 
+1205  2017-07-08 22:58:45 git branch -a
+1206  2017-07-08 22:59:09 git checkout master 
+1207  2017-07-08 22:59:14 git status
+1208  2017-07-08 22:59:52 git checkout dev
+1209  2017-07-08 23:00:06 vim test.c 
+1210  2017-07-08 23:00:33 git status 
+1211  2017-07-08 23:01:19 git commit -am "update test.c in branch dev"
+1212  2017-07-08 23:01:25 git log --oneline 
+1213  2017-07-08 23:01:44 git checkout master 
+1214  2017-07-08 23:01:47 git log --oneline 
+1222  2017-07-08 23:02:40 git status 
+1223  2017-07-08 23:02:45 vim test.c 
+1224  2017-07-08 23:03:02 git checkout dev
+1225  2017-07-08 23:03:06 vim test.c 
+1226  2017-07-08 23:03:14 git checkout master 
+1227  2017-07-08 23:03:20 git merge dev
+1228  2017-07-08 23:03:30 git log --oneline 
+1229  2017-07-08 23:03:36 vim test.c 
+1230  2017-07-08 23:04:26 git log --oneline --graph
+1231  2017-07-08 23:04:47 git reset 32118a5
+1232  2017-07-08 23:05:28 git reset --hard 32118a5
+1233  2017-07-08 23:05:32 vim test.c 
+1234  2017-07-08 23:05:45 git log --graph
+1235  2017-07-08 23:06:31 git log --oneline --graph
+1236  2017-07-08 23:07:13 git merge --no-ff dev -m "merge branch dev"
+1237  2017-07-08 23:07:17 git log --oneline --graph
+1238  2017-07-08 23:07:23 git log --oneline
+1239  2017-07-08 23:07:52 git reset --hard HEAD
+1240  2017-07-08 23:07:56 vim test.c 
+1241  2017-07-08 23:08:21 git reset --hard c57a627
+1242  2017-07-08 23:08:29 vim test.c 
+1243  2017-07-08 23:08:34 git reset --hard HEAD
+1244  2017-07-08 23:08:50 git reset --hard ac43818
+1245  2017-07-08 23:08:58 git log --oneline
+1246  2017-07-08 23:09:04 git reflog --oneline
+1247  2017-07-08 23:09:28 git reflog --oneline --graph
+1248  2017-07-08 23:09:54 git branch -d dev
+1249  2017-07-08 23:09:58 git branch 
+1250  2017-07-08 23:10:02 git branch -d dev2
+1251  2017-07-08 23:10:04 git branch 
+1252  2017-07-08 23:12:04 git branch dev
+1253  2017-07-08 23:12:10 git checkout  dev
+1254  2017-07-08 23:12:17 git log --oneline 
+1255  2017-07-08 23:12:22 git reflog --oneline 
+1256  2017-07-08 23:12:27 vim test.c 
+1257  2017-07-08 23:13:08 git status 
+1260  2017-07-08 23:14:00 git commit -am test.c -m "last changes in dev"
+1261  2017-07-08 23:14:09 git log --oneline --graph
+1262  2017-07-08 23:14:30 git log --oneline 
+1263  2017-07-08 23:14:39 git reflog --oneline 
+1264  2017-07-08 23:14:56 git commit -am test.c -m "last changes in dev"
+1265  2017-07-08 23:15:04 git status 
+1266  2017-07-08 23:15:11 git checkout master 
+1267  2017-07-08 23:15:18 git log --oneline 
+1268  2017-07-08 23:15:24 vim test.c 
+1269  2017-07-08 23:16:14 git commit -am "last changes in master"
+1270  2017-07-08 23:16:17 git log --oneline 
+1271  2017-07-08 23:16:41 git merge dev
+1272  2017-07-08 23:16:48 vim test.c 
+1273  2017-07-08 23:18:34 git commit -am "conflict solved"
+1274  2017-07-08 23:18:40 git log --oneline 
+1275  2017-07-08 23:18:51 git log --oneline --graph
+1281  2017-07-08 23:28:08 git tag 32118a5 v1.0
+1282  2017-07-08 23:28:29 git tag v1.0 32118a5
+1283  2017-07-08 23:28:33 git tag
+1284  2017-07-08 23:28:38 git log --oneline
+1285  2017-07-08 23:28:56 git branch 
+1286  2017-07-08 23:29:00 git branch -d dev
+1287  2017-07-08 23:29:03 git branch 
+1288  2017-07-08 23:29:17 git tag v2,0 
+1289  2017-07-08 23:29:21 git tag 
+1290  2017-07-08 23:29:53 git tag v2,0 
+1291  2017-07-08 23:30:21 git reset --hard tag v2,0
+1292  2017-07-08 23:31:09 git reset --hard v2,0
+1293  2017-07-08 23:31:16 git reset --hard v1.0
+1294  2017-07-08 23:31:22 git log --oneline 
+1295  2017-07-08 23:31:27 git tag
+1296  2017-07-08 23:31:32 git reset --hard v2,0
+1297  2017-07-08 23:31:36 git log --oneline 
+1298  2017-07-08 23:31:42 git reflog --oneline 
+1299  2017-07-08 23:34:51 git remote add origin https://github.com/mabing993/usetest.git
+1300  2017-07-08 23:35:00 git remote 
+1301  2017-07-08 23:35:03 git remote -v
+1302  2017-07-08 23:35:26 git push -u origin master
+1306  2017-07-08 23:37:45 vim test.c 
+1307  2017-07-08 23:40:54 git commit -am "after remote"
+1308  2017-07-08 23:41:01 git log --oneline
+1309  2017-07-08 23:41:11 git push -u origin master
+1310  2017-07-08 23:41:55 history 
+
